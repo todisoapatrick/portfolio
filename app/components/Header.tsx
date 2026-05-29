@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ThemeToggle } from "./ThemeToggle";
 
 const links = [
   { href: "/", label: "Accueil" },
@@ -10,7 +11,7 @@ export function Header() {
   return (
     <header className="flex w-full items-center justify-between px-6 py-5 sm:px-10 lg:px-16">
       <Link className="text-base font-black tracking-tight" href="/">
-        MGR
+        MGP
       </Link>
       <nav className="flex items-center gap-4 text-xs font-semibold sm:gap-8">
         {links.map((link) => (
@@ -18,6 +19,7 @@ export function Header() {
             {link.label}
           </Link>
         ))}
+        <ThemeToggle />
         <Link className="rounded-full bg-[#f4f4f4] px-4 py-2" href="/contact">
           Contact{" "}
           <span className="ml-1 rounded-full bg-black px-1.5 py-0.5 text-white">

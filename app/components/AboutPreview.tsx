@@ -5,7 +5,7 @@ export function AboutPreview() {
     <section className="relative px-6 py-20 sm:px-10 lg:px-16">
       <div className="absolute bottom-0 left-0 h-36 w-52 bg-[#d9ffe3] [clip-path:polygon(0_0,70%_0,100%_100%,0_100%)]" />
       <div className="absolute bottom-0 right-0 h-36 w-52 bg-[#b7edff] [clip-path:polygon(30%_0,100%_0,100%_100%,0_100%)]" />
-      <div className="relative mx-auto max-w-4xl">
+      <div className="reveal-up relative mx-auto max-w-4xl">
         <h2 className="mx-auto max-w-2xl text-center text-[clamp(2rem,4vw,3.4rem)] font-black leading-tight tracking-tight">
           J&apos;aime créer un design simple, élégant et utile
         </h2>

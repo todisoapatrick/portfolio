@@ -5,7 +5,7 @@ import profile from "@/assets/images/profile.png";
 export function Hero() {
   return (
     <section className="relative grid min-h-[620px] w-full items-center gap-8 px-6 pb-14 pt-8 sm:px-10 lg:grid-cols-[0.92fr_1.08fr] lg:px-16 lg:pb-10">
-      <div className="relative z-10 max-w-[560px]">
+      <div className="reveal-up relative z-10 max-w-[560px]">
         <h1 className="max-w-[9ch] text-[clamp(3rem,7vw,6.5rem)] font-black leading-[0.94] tracking-tight">
           Créer pour des gens incroyables
         </h1>
@@ -23,7 +23,7 @@ export function Hero() {
               →
             </span>
           </Link>
-          <div className="flex items-center gap-3 text-sm">
+          {/* <div className="flex items-center gap-3 text-sm">
             <div className="flex -space-x-2">
               {["MG", "RT", "UI", "JS"].map((initials) => (
                 <span
@@ -36,11 +36,11 @@ export function Hero() {
             </div>
             <strong>10+</strong>
             <span className="text-[#888]">projets livrés</span>
-          </div>
+          </div> */}
         </div>
       </div>
 
-      <div className="relative mx-auto h-[470px] w-full max-w-[560px]">
+      <div className="reveal-up relative mx-auto h-[470px] w-full max-w-[560px] [animation-delay:120ms]">
         <div className="absolute left-[10%] top-[18%] h-[285px] w-[330px] rounded-[44px] bg-[#d8ffe0]" />
         <div className="absolute bottom-[8%] right-[5%] h-[285px] w-[360px] rounded-[44px] bg-[#aeeaff]" />
         <div className="absolute left-1/2 top-4 h-[430px] w-[310px] -translate-x-1/2 overflow-hidden rounded-t-[150px] bg-[#f7f7f7] shadow-[0_25px_50px_rgba(0,0,0,0.12)]">
@@ -52,13 +52,13 @@ export function Hero() {
             sizes="(max-width: 768px) 80vw, 310px"
           />
         </div>
-        <span className="absolute right-4 top-[28%] rounded-full bg-[#dfff58] px-5 py-2 text-xs font-bold">
+        <span className="float-soft absolute right-4 top-[28%] rounded-full bg-[#dfff58] px-5 py-2 text-xs font-bold">
           Développeur UI
         </span>
-        <span className="absolute left-3 top-[40%] rounded-full bg-[#6fe2fb] px-5 py-2 text-xs font-bold">
+        <span className="float-soft absolute left-3 top-[40%] rounded-full bg-[#6fe2fb] px-5 py-2 text-xs font-bold [animation-delay:400ms]">
           Web & mobile
         </span>
-        <span className="absolute bottom-[24%] right-0 rounded-full bg-[#9cf4b2] px-5 py-2 text-xs font-bold">
+        <span className="float-soft absolute bottom-[24%] right-0 rounded-full bg-[#9cf4b2] px-5 py-2 text-xs font-bold [animation-delay:800ms]">
           Product design
         </span>
       </div>

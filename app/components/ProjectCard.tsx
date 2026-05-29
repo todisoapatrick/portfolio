@@ -1,38 +1,44 @@
+import Image, { type StaticImageData } from "next/image";
+
 type ProjectCardProps = {
   project: {
     title: string;
     description: string;
     tags: string[];
     tone: string;
+    logo?: StaticImageData;
   };
 };
 
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <article className="rounded-[20px] border border-[#ececec] bg-white p-4 shadow-[0_18px_50px_rgba(0,0,0,0.06)]">
-      <div className={`h-48 rounded-[18px] bg-gradient-to-br ${project.tone} p-5`}>
-        <div className="h-full rounded-[14px] border border-white/80 bg-white/75 p-4 shadow-[0_16px_30px_rgba(0,0,0,0.08)]">
-          <div className="mb-5 flex gap-2">
-            <span className="size-2 rounded-full bg-red-300" />
-            <span className="size-2 rounded-full bg-yellow-300" />
-            <span className="size-2 rounded-full bg-green-300" />
-          </div>
-          <div className="grid grid-cols-[0.7fr_1fr] gap-3">
-            <div className="space-y-2">
-              <span className="block h-4 rounded-full bg-[#202223]" />
-              <span className="block h-12 rounded-xl bg-[#65ddf5]" />
-              <span className="block h-12 rounded-xl bg-[#dfff58]" />
+    <article className="project-card reveal-up rounded-[20px] border border-[#ececec] bg-white p-4 shadow-[0_18px_50px_rgba(0,0,0,0.06)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_24px_60px_rgba(0,0,0,0.1)]">
+      <div
+        className={`project-visual h-48 rounded-[18px] bg-gradient-to-br ${project.tone} p-5`}
+      >
+        <div className="grid h-full place-items-center rounded-[14px] border border-white/80 bg-white/80 p-5 shadow-[0_16px_30px_rgba(0,0,0,0.08)]">
+          {project.logo ? (
+            <Image
+              alt={`Logo ${project.title}`}
+              className="max-h-28 w-auto object-contain"
+              src={project.logo}
+              sizes="(max-width: 768px) 70vw, 260px"
+            />
+          ) : (
+            <div className="grid size-28 place-items-center rounded-[24px] border border-[#202223]/10 bg-[#202223] text-center text-3xl font-black text-white shadow-[0_18px_35px_rgba(0,0,0,0.14)]">
+              {project.title
+                .split(" ")
+                .map((word) => word[0])
+                .join("")
+                .slice(0, 2)}
             </div>
-            <div className="space-y-3">
-              <span className="block h-8 rounded-xl bg-[#efefef]" />
-              <span className="block h-8 rounded-xl bg-[#efefef]" />
-              <span className="block h-8 rounded-xl bg-[#efefef]" />
-            </div>
-          </div>
+          )}
         </div>
       </div>
       <h3 className="mt-5 text-xl font-black">{project.title}</h3>
-      <p className="mt-3 text-sm leading-6 text-[#777]">{project.description}</p>
+      <p className="mt-3 whitespace-pre-line text-sm leading-6 text-[#777]">
+        {project.description}
+      </p>
       <div className="mt-4 flex flex-wrap gap-2">
         {project.tags.map((tag) => (
           <span

@@ -10,7 +10,7 @@ export function CompaniesSection() {
       <div className="mx-auto mt-12 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2">
         {companies.map((company) => (
           <div
-            className="grid aspect-square place-items-center rounded-full border border-[#eee] bg-white p-10 shadow-[0_18px_45px_rgba(0,0,0,0.05)]"
+            className="reveal-up grid aspect-square place-items-center rounded-full border border-[#eee] bg-white p-10 shadow-[0_18px_45px_rgba(0,0,0,0.05)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_24px_55px_rgba(0,0,0,0.08)]"
             key={company.name}
           >
             <Image

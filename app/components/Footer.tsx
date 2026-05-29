@@ -28,8 +28,9 @@ export function Footer() {
         </div>
         <div>
           <h3 className="mb-4 font-black text-[#202124]">Information</h3>
-          <p>Antananarivo, Madagascar</p>
-          <p>contact@portfolio.dev</p>
+          <p>Andrainjato, Fianarantsoa, Madagascar</p>
+          <p>gabrielotodisoa@gmail.com</p>
+          <p>+261 34 68 080 97</p>
           <p>Disponible pour missions</p>
         </div>
       </div>

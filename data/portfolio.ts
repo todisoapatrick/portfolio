@@ -1,48 +1,56 @@
 import fiveDigitsLogo from "@/assets/images/fivedigits.png";
 import genkeyLogo from "@/assets/images/logo-genkey.webp";
+import campExpenseLogo from "@/assets/images/Camp_expense_logo.png";
+import orchestraLogo from "@/assets/images/orchestra_logo.png";
+import shouseLogo from "@/assets/images/SHouse_logo.png";
+import talentioLogo from "@/assets/images/talentio_logo.png";
 
 export const projects = [
   {
-    title: "Tableau de bord e-commerce",
+    title: "Orchestra",
     description:
-      "Interface d'administration pour suivre les ventes, les stocks et les commandes en temps réel.",
-    tags: ["Next.js", "UI/UX"],
+      "Lecteur de musique sur mobile, projet academique de developpement mobile en L3 \n Lien : https://github.com/todisoapatrick/Orchestra",
+    tags: ["Flutter", "UI/UX"],
     tone: "from-sky-100 to-lime-100",
+    logo: orchestraLogo,
   },
   {
-    title: "Application mobile de services",
+    title: "Talentio",
     description:
-      "Application mobile pensée pour des parcours simples, rapides et accessibles.",
-    tags: ["React Native", "API"],
+      "Plateforme web de recherche et d'offre de travail, rencontre entre Talent et recruteur",
+    tags: ["React TS", "Nest TS"],
     tone: "from-zinc-100 to-cyan-100",
+    logo: talentioLogo,
   },
   {
-    title: "Plateforme de gestion",
+    title: "SHouse",
     description:
-      "Outil métier pour organiser les utilisateurs, les rapports et les opérations internes.",
-    tags: ["Laravel", "Dashboard"],
+      "Plateforme web de vente ou d'allocation de logement \n Lien : https://github.com/todisoapatrick/SHouse_front",
+    tags: ["React JS", "Spring"],
     tone: "from-lime-100 to-zinc-100",
+    logo: shouseLogo,
   },
   {
     title: "Portfolio créatif",
     description:
-      "Site personnel responsive avec direction artistique claire et sections modulaires.",
+      "Site personnel responsive avec direction artistique claire et sections modulaires. \n Lien : https://github.com/todisoapatrick/portfolio",
     tags: ["Next.js", "Tailwind"],
     tone: "from-cyan-100 to-zinc-100",
   },
   {
-    title: "Application desktop interne",
+    title: "Projet ValalMad",
     description:
-      "Interface de travail pour automatiser des tâches répétitives et fiabiliser les données.",
-    tags: ["Desktop", "TypeScript"],
+      "Module de suivi et de simulation de deplacement des essaims de criquets pelerin",
+    tags: ["Python", "Mesa"],
     tone: "from-lime-100 to-sky-100",
   },
   {
-    title: "Landing page produit",
+    title: "Camp Expense",
     description:
-      "Page de présentation optimisée pour clarifier l'offre et guider vers le contact.",
-    tags: ["Branding", "Front-end"],
-    tone: "from-zinc-100 to-lime-100",
+      "Design d'un application mobile de gestion de depense de materiel de campement \n Lien : https://www.figma.com/design/uO7lwTRfqmyyZoFpDcfajQ/CampExpense?node-id=0-1&p=f&t=Oxu70CPJM0xTGAjN-0",
+    tags: ["UI/UX", "Figma"],
+    tone: "from-sky-100 to-lime-100",
+    logo: campExpenseLogo,
   },
 ];
 
