@@ -3,9 +3,12 @@ import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Portfolio - Mamilalaina Todisoa",
+  title: "Portfolio - Mamilalaina Todisoa Gabrielo Patrick",
   description:
     "Portfolio en français de Mamilalaina Todisoa Gabrielo Patrick, développeur web, mobile et desktop.",
+  verification: {
+    google : 'googlebbfcc46cade39aec',
+  }    
 };
 
 export default function RootLayout({
